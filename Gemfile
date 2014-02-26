@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'berkshelf'
+gem 'kitchen-docker'
 
 # Uncomment these lines (and the ones in the generated Vagrantfile) if you want
 # to live on the Edge:
@@ -10,3 +11,5 @@ gem 'berkshelf'
 # gem "vagrant-berkshelf", github: "berkshelf/vagrant-berkshelf"
 # gem "vagrant-omnibus", github: "schisamo/vagrant-omnibus", tag: "v1.1.2"
 
+gem 'test-kitchen'
+gem 'kitchen-vagrant'

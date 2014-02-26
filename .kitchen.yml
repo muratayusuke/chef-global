@@ -1,0 +1,17 @@
+---
+driver:
+  name: docker
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: ubuntu-docker-test
+    driver_config:
+      image: "stackbrew/ubuntu"
+
+suites:
+  - name: default
+    run_list:
+      - recipe[global]
+    attributes:
