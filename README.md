@@ -8,20 +8,9 @@ ubuntu
 
 ## Attributes
 
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['global']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
-  </tr>
-</table>
+* `node['global']['prefix']` - global install directory
+* `node['global']['version']` - global version to install
+* `node['global']['url']` - URL to global tarball
 
 ## Usage
 
