@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
   # options are documented and commented below. For a complete reference,
   # please see the online documentation at vagrantup.com.
 
-  config.vm.hostname = "site-cookbooks/global-berkshelf"
+  config.vm.hostname = "global-berkshelf"
 
   # Set the version of chef to install using the vagrant-omnibus plugin
   config.omnibus.chef_version = :latest
@@ -86,7 +86,7 @@ Vagrant.configure("2") do |config|
     }
 
     chef.run_list = [
-        "recipe[site-cookbooks/global::default]"
+        "recipe[global::default]"
     ]
   end
 end

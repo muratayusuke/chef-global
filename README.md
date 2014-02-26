@@ -1,10 +1,10 @@
-# site-cookbooks/global-cookbook
+# global-cookbook
 
-TODO: Enter the cookbook description here.
+Install and config global
 
 ## Supported Platforms
 
-TODO: List your supported platforms.
+ubuntu
 
 ## Attributes
 
@@ -16,7 +16,7 @@ TODO: List your supported platforms.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['site-cookbooks/global']['bacon']</tt></td>
+    <td><tt>['global']['bacon']</tt></td>
     <td>Boolean</td>
     <td>whether to include bacon</td>
     <td><tt>true</tt></td>
@@ -25,14 +25,14 @@ TODO: List your supported platforms.
 
 ## Usage
 
-### site-cookbooks/global::default
+### global::default
 
-Include `site-cookbooks/global` in your node's `run_list`:
+Include `global` in your node's `run_list`:
 
 ```json
 {
   "run_list": [
-    "recipe[site-cookbooks/global::default]"
+    "recipe[global::default]"
   ]
 }
 ```
@@ -48,4 +48,20 @@ Include `site-cookbooks/global` in your node's `run_list`:
 
 ## License and Authors
 
-Author:: YOUR_NAME (<YOUR_EMAIL>)
+- Author:: Yusuke Murata (<info@muratayusuke.com>)
+
+```text
+Copyright:: 2014, Yusuke Murata
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
