@@ -1,4 +1,4 @@
-pkgs = %w{exuberant-ctags}
+pkgs = %w{libncurses5-dev exuberant-ctags}
 pkgs.each do |pkg|
   package pkg
 end
