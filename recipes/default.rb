@@ -19,6 +19,5 @@ execute "Extracting and Building Global #{node['global']['version']} from Source
     make
     make install
   COMMAND
-  creates "#{node['global']['prefix']}/bin/global"
   not_if "#{node['global']['prefix']}/bin/global --version | grep #{node['global']['version']}"
 end
